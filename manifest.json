@@ -1,0 +1,225 @@
+{
+  "name": "Clean Page",
+  "description": "Remove unnecessary distractions from page",
+  "version": "3.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_title": "Remove Ads",
+    "default_icon": {
+      "38": "Window-Delete-32.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.outlookindia.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/outlookindia.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://economictimes.indiatimes.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/et-times.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://indiatimes.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/et-times.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://qwiklabs.com/*",
+        "https://www.qwiklabs.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/qwiklabs.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.medium.com/*",
+        "https://medium.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/medium.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.washingtonpost.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/washingtonpost.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.ndtv.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/ndtv.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.livemint.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/livemint.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://indianexpress.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/iexpress.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://zeenews.india.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/zeenews.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.espncricinfo.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/espncricinfo.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.moneycontrol.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/moneycontrol.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.gsmarena.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/gsmarena.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://cloud.google.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/gcp_docs.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://*.business-standard.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/business-standard.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.hindustantimes.com/*",
+        "https://auto.hindustantimes.com/*",
+        "https://*.hindustantimes.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/hindustantimes.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.news18.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/news18.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://timesofindia.indiatimes.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/toi.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.productioncoder.com/*",
+        "https://productioncoder.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/productioncoder.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://watch.tatasky.com/*"
+      ],
+      "js": [
+        "utils.js",
+        "sites/tatasky.js"
+      ]
+    }
+  ],
+  "icons": {
+    "128": "Window-Delete-128.png"
+  },
+  "manifest_version": 3
+}

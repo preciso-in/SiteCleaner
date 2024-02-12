@@ -25,12 +25,31 @@
     },
     {
       "matches": [
+        "https://www.divinedaolibrary.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/others/divinedaolibrary.js"
+      ]
+    },
+    {
+      "matches": [
         "https://economictimes.indiatimes.com/*"
       ],
       "js": [
         "removeiFrame.js",
         "utils.js",
         "sites/et-times.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://wujizun.com/*"
+      ],
+      "js": [
+        "utils.js",
+        "sites/others/wujizun.js"
       ]
     },
     {
@@ -83,6 +102,43 @@
         "removeiFrame.js",
         "utils.js",
         "sites/ndtv.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.scribblehub.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/others/scribblehub.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.webtoon.xyz/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "sites/others/webtoon/shared.js",
+        "utils.js",
+        "sites/others/webtoon/ignoreWebtoonList.js",
+        "sites/others/webtoon/hideWebtoons.js",
+        "sites/others/webtoon/currentlyReadingList.js",
+        "sites/others/webtoon/highlightCurrentWebtoon.js",
+        "sites/others/webtoon/highlightWebtoon.js",
+        "sites/others/webtoon/webtoon.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://neatmanga.com/*",
+        "https://www.neatmanga.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/others/neatmanga.js"
       ]
     },
     {

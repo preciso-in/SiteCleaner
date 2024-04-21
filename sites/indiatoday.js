@@ -1,10 +1,22 @@
-const elementsToHide = [
+const elementsToHideOld = [
   ".theiaStickySidebar",
   ".__rhslisting_news",
   ".theiaStickySidebar",
   ".__scrolled_header",
   "footer",
   ".left_trending.left-sticky",
+];
+const elementsToHide = [
+  ".rhs__section",
+  ".AiRecommended_recommended__widget__ZkRo0",
+  ".recommended_widget",
+  "#shoppingWidgetLSH",
+  ".taboola__container",
+  ".inline-story-ad-scroll",
+  ".ads__common",
+  ".sticknavigation",
+  ".ads__container",
+  ".inline_ad1",
 ];
 
 const elementsToStyle = [

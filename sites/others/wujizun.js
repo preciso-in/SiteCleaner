@@ -3,7 +3,12 @@ const elementsToStyle = [
   ["span.ezoic-ad", "min-height", "5px"],
 ];
 
-const elementsToHide = [".ezoic-ad"];
+const elementsToHide = [
+  ".ezoic-ad",
+  "[data-ez-ph-id]",
+  "#right-sidebar",
+  ".wpnm-button",
+];
 
 doOnce(cleanPage);
 repeat(() => {

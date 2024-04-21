@@ -25,6 +25,16 @@
     },
     {
       "matches": [
+        "https://www.indiatoday.in/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/indiatoday.js"
+      ]
+    },
+    {
+      "matches": [
         "https://economictimes.indiatimes.com/*"
       ],
       "js": [

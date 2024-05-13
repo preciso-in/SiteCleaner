@@ -18,6 +18,7 @@ const elementsToHide = [
   ".fixHeight340",
   "#adfreeDeskSpace",
   ".leftSec",
+  "#div-gpt-ad-gutterAds-0",
   ".headMenu",
   ".shareSticky *",
   ".FirstAd",
@@ -27,6 +28,10 @@ const elementsToHide = [
   ".adsHeight300x250",
   "[class^=ads]",
   "[class*=Ads]",
+  ".quiz_template2",
+  "[class*=taboola]",
+  ".pollShow",
+  "[class^=poll]",
 ];
 
 const elementsToStyle = [

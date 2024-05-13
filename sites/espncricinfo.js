@@ -8,6 +8,8 @@ const elementsToHide = [
   ".no-gutters .sticky-top",
   "#header-wrapper",
   ".match-header-container",
+  ".teads-ui-components-adchoices",
+  ".teads-inread",
 ];
 
 const elementsToStyle = [

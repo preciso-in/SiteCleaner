@@ -6,6 +6,7 @@ const elementsToHide = [
   ".secondNav",
   "#footer_ajax_div",
   ".insidefollwicon",
+  "aside#right",
 ];
 
 doOnce(cleanPage);

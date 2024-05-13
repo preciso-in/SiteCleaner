@@ -167,6 +167,16 @@
     },
     {
       "matches": [
+        "https://*.firstpost.com/*"
+      ],
+      "js": [
+        "removeiFrame.js",
+        "utils.js",
+        "sites/firstpost.js"
+      ]
+    },
+    {
+      "matches": [
         "https://*.business-standard.com/*"
       ],
       "js": [

@@ -71,6 +71,7 @@ const currentlyReadingList = [
   "Is there an Empty Room?",
   "It’s Okay Because We’re Family",
   "I’ll Eat Your Mom First",
+  "I'm The Leader Of A Cult",
   "Just Right There!",
   "Kitsch Year",
   "Ladies’ Man",

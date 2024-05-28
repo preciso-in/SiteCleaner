@@ -20,7 +20,6 @@ const currentlyReadingList = [
   "Between Us",
   "Big Boss Gone Bad",
   "Boarding Diary",
-  "Body Bind",
   "Boobie Trap",
   "Bought By The Demon Lord Before The Ending",
   "Breakaway : Joys of Travel",

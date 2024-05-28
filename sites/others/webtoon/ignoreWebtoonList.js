@@ -32,6 +32,7 @@ const readOrIgnoreWebtoons = [
   "Block 69",
   "Blood Link",
   "Blooming Sequence",
+  "Body Bind",
   "Boss Around",
   "Brawling Go!",
   "Bride Training",

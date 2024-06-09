@@ -1,6 +1,7 @@
 const currentlyReadingList = [
   "24 Hour Love",
   "A Good Day To Pitch A Tent",
+  "A Guide to Corrupting Them With Hypnosis",
   "A Pervert's Daily life",
   "A Rich Lady",
   "A Secret Lesson With My Younger Sister",
@@ -53,6 +54,7 @@ const currentlyReadingList = [
   "Girls I Used to Teach",
   "Go Ahead, Mom",
   "God Model",
+  "God of Pleasure",
   "Goddess Hunting",
   "Golden Facade",
   "Grand Disciple",
@@ -156,6 +158,7 @@ const currentlyReadingList = [
   "The Hole is Open",
   "The Hypnosis App was Fake",
   "The Lustful Demon is the King of Demons",
+  "The Man Who Devours",
   "The Mismatch",
   "The Runaway Family",
   "The Share House's Secret Rule",
@@ -164,7 +167,6 @@ const currentlyReadingList = [
   "Thorns of Innocence",
   "Touch to Unlock",
   "Turned On By My Nephew",
-  "Tutoring the Lonely Missus",
   "Twin Takes",
   "Under the Radar",
   "Understanding of Flirting",
@@ -182,4 +184,4 @@ const currentlyReadingList = [
   "Young Boss",
   "Young Housemaid",
   "Your Wife Was Amazing",
-].map(standardiseString);
+].map(standardiseString); // Standardise ’, trim, lowercase,

@@ -170,6 +170,7 @@ const readOrIgnoreWebtoons = [
   "What’s for Dinner",
   "What’s for Today Dinner?",
   "Tonight, You’re My Dinner",
+  "Tutoring the Lonely Missus",
   "Love Parameter",
   "Loveniverse",
   "Ma'am, it's on SALE!",

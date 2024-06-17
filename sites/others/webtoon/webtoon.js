@@ -23,17 +23,24 @@ const elementsToStyle = [
   ["#layout  p", "color", "white"],
 ];
 
+const elementsToDelete = [
+  //
+  ".c-sub-header-nav.with-border.sticky .container",
+];
+
 doOnce(addCompletedLinkToNavBar, cleanPage);
 customRepeat(500, () => {
   hideHeader();
   elementsToStyle.forEach((elem) => changeStyle(...elem));
   removeiFrame();
+  elementsToDelete.forEach((elem) => deleteElement(elem));
 });
 
 function cleanPage() {
   elementsToHide.forEach((x) => hideElements(x));
   elementsToStyle.forEach((elem) => changeStyle(...elem));
   hideWebtoons();
+  elementsToDelete.forEach((elem) => deleteElement(elem));
   // removeComments();
 }
 
@@ -58,16 +65,6 @@ function hideWebtoons() {
   );
 
   const showingSearchListPage = queryParams.includes("?s=");
-
-  console.log({
-    pathToProcess,
-    queryParams,
-    showingAdultListPage,
-    showingAlbumPage,
-    showingAlbumChapter,
-    showingCompletedAlbumsListPage,
-    showingGenreListPage,
-  });
 
   if (showingCompletedAlbumsListPage) {
     removePlainWebtoons("completed");

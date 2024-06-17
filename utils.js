@@ -12,6 +12,13 @@ function changeStyle(selector, property, value) {
   });
 }
 
+function deleteElement(selector) {
+  const elems = document.querySelectorAll(selector);
+  elems.forEach((elem) => {
+    elem.remove();
+  });
+}
+
 function doOnce(...fnArray) {
   fnArray.forEach((f) => {
     if (f instanceof Function) f();

@@ -29,7 +29,6 @@ const elementsToHide = [
   "[class^=ads]",
   "[class*=Ads]",
   ".quiz_template2",
-  "[class*=taboola]",
   ".pollShow",
   "[class^=poll]",
 ];

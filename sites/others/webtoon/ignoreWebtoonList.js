@@ -215,6 +215,7 @@ const readOrIgnoreWebtoons = [
   "My Secretary’s Got a Secret",
   "My Stepmom",
   "My Stepmom’s Plan",
+  "My Sweet Home",
   "My Teacher",
   "My Wife is a Mom",
   "My Wife’s Friend",

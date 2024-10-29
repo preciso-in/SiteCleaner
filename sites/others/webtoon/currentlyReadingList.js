@@ -108,6 +108,7 @@ const currentlyReadingList = [
   "Man of The House",
   "Marriage Agency Review",
   "May I Help you?",
+  "Milf Guard",
   "Mind Reader",
   "Moby Dick",
   "Modern Apartment, Gyeonseong 1930",
@@ -128,6 +129,7 @@ const currentlyReadingList = [
   "Not the Daughter, but the Mother",
   "Not to be missed",
   "Obsessive Romance",
+  "Office Shitbag Alert",
   "Oppa, Not There",
   "Origin of Sensibility",
   "Panty Note",
@@ -232,4 +234,4 @@ const currentlyReadingList = [
   "Young Aunt",
   "Young Housemaid",
   "Your Wife Was Amazing",
-].map(standardiseString); // Standardise ’, trim, lowercase,
+].map(standardiseString);

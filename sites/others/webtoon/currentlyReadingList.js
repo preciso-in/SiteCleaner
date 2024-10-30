@@ -50,6 +50,7 @@ const currentlyReadingList = [
   "Distractions",
   "Do It One More Time",
   "Downstairs Lady",
+  "Drunk on You",
   "Elf Who Likes To Be Humiliated",
   "Eunha’s Advice",
   "Everything Is Agreed",

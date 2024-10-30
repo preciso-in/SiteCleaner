@@ -30,6 +30,7 @@ const readOrIgnoreWebtoons = [
   "Banging My Aunt",
   "Bastard’s Dead Man",
   "Be Our Guest",
+  "Beethoven Syndrome",
   "Between Us (Goinmul)",
   "Between Us",
   "Beyond Imagination",

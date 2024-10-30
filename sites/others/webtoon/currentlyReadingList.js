@@ -1,5 +1,6 @@
 const currentlyReadingList = [
   "24 Hour Love",
+  "69 University",
   "A Good Day To Pitch A Tent",
   "A Guide to Corrupting Them With Hypnosis",
   "A Pervert's Daily life",
@@ -66,6 +67,7 @@ const currentlyReadingList = [
   "Gangnam Romance",
   "Girls I Used to Teach",
   "Go Ahead, Mom",
+  "God Bless You",
   "God Model",
   "God of Pleasure",
   "Goddess Hunting",
@@ -81,6 +83,7 @@ const currentlyReadingList = [
   "How to Train Her",
   "Hunting for Cougars",
   "Ice Love",
+  "Idiot Virus",
   "In Her Place",
   "In The Summer",
   "Is It Your Mother or Sister?",

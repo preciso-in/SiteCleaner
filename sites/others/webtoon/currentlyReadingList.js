@@ -66,6 +66,7 @@ const currentlyReadingList = [
   "Floor Noise",
   "Forcing the Woman I Despise Into Submission",
   "Freshman",
+  "Friend's Mom Is Mine",
   "Friends with Secrets",
   "Friend’s Girlfriend",
   "Gangnam Romance",

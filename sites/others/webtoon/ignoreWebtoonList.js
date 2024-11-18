@@ -77,6 +77,7 @@ const readOrIgnoreWebtoons = [
   "College Grades Skyrocketing",
   "Confidentiality Agreement",
   "Corner Shop",
+  "Corruption In The Dungeon",
   "Couple Game: 17 Sex Fantasies Ver.2",
   "Cowgirl’s Riding-Position Makes Me Cum",
   "Creampie",

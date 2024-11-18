@@ -11,6 +11,7 @@ const currentlyReadingList = [
   "A Wonderful New World",
   "Absolute Hypnosis in Another World",
   "Addicted to My Stepmom",
+  "Amazing Reincarnation",
   "An Alley story",
   "As If Daughter",
   "Bad Guy",

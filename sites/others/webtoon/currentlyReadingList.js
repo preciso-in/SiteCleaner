@@ -16,6 +16,7 @@ const currentlyReadingList = [
   "An Alley story",
   "An Invisible Kiss",
   "As If Daughter",
+  "Athletes Village: The Trap",
   "Bad Guy",
   "Bad Thinking Diary",
   "Barefoot : The Leash Season 2",

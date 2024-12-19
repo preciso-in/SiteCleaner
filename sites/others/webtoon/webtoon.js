@@ -32,72 +32,88 @@ doOnce(addCompletedLinkToNavBar, cleanPage);
 customRepeat(500, () => {
   hideHeader();
   elementsToStyle.forEach((elem) => changeStyle(...elem));
-  removeiFrame();
+  // removeiFrame();
   elementsToDelete.forEach((elem) => deleteElement(elem));
 });
 
 function cleanPage() {
   elementsToHide.forEach((x) => hideElements(x));
   elementsToStyle.forEach((elem) => changeStyle(...elem));
-  hideWebtoons();
+  processWebtoons();
   elementsToDelete.forEach((elem) => deleteElement(elem));
   // removeComments();
 }
 
-function hideWebtoons() {
-  const pathToProcess = window.location.pathname;
-  const queryParams = window.location.search;
+function whatPage(location) {
+  const pathToProcess = location.pathname;
+  const queryParams = location.search;
 
-  const showingCompletedAlbumsListPage = pathToProcess.includes("completed");
+  const isCompletedAlbums = pathToProcess.includes("completed");
 
-  const showingGenreListPage = pathToProcess.includes("webtoon-genre");
+  const isGenreList = pathToProcess.includes("webtoon-genre");
 
-  let showingAlbumChapter = false;
-  let showingAlbumPage = false;
+  let isAlbumChapter = false;
+  let isAlbum = false;
   if (pathToProcess.includes("read")) {
     pathToProcess.includes("chapter-")
-      ? (showingAlbumChapter = true)
-      : (showingAlbumPage = true);
+      ? (isAlbumChapter = true) // Current webpage shows chapter releases for the manhwa
+      : (isAlbum = true); // Current webpage is the chapter in the album
   }
 
-  const showingAdultListPage = queryParams.includes(
-    "post_type=wp-manga&adult=1"
-  );
+  const isAdultList = queryParams.includes("post_type=wp-manga&adult=1");
 
-  const showingSearchListPage = queryParams.includes("?s=");
+  const isSearchList = queryParams.includes("?s=");
 
-  if (showingCompletedAlbumsListPage) {
+  const isAllWebtoons =
+    queryParams.includes("/webtoons") ||
+    queryParams.includes("/webtoon-genre/");
+
+  return {
+    isCompletedAlbums,
+    isGenreList,
+    isAlbumChapter,
+    isAlbum,
+    isAdultList,
+    isSearchList,
+    isAllWebtoons,
+  };
+}
+
+function processWebtoons() {
+  const page = whatPage(window.location);
+
+  if (page.isCompletedAlbums) {
     removePlainWebtoons("completed");
     removeIgnoredWebtoons("completed");
     highlightWebtoons("completed");
     return;
   }
-  if (showingSearchListPage) {
+  if (page.isSearchList) {
     removeIgnoredWebtoons("search");
     highlightWebtoons("search");
     return;
   }
-  if (showingGenreListPage) {
+  if (page.isGenreList) {
     removePlainWebtoons("genre");
     removeIgnoredWebtoons("genre");
     highlightWebtoons("genre");
     return;
   }
-  if (showingAdultListPage) {
+  if (page.isAdultList) {
     removeIgnoredWebtoons("adult");
     highlightWebtoons("adult");
     return;
   }
-  if (showingAlbumPage) {
+  if (page.isAlbum) {
     removeReadRelatedWebtoons();
     highlightWebtoons();
-    highlightCurrentWebtoon();
+    describeCurrentWebtoon("readAlbum");
     return;
   }
-  if (showingAlbumChapter) {
+  if (page.isAlbumChapter) {
     removeReadRelatedWebtoons();
     highlightWebtoons();
-    highlightCurrentWebtoon("readChapter");
+    describeCurrentWebtoon("readChapter");
     return;
   }
 }

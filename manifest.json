@@ -135,7 +135,7 @@
         "sites/others/webtoon/ignoreWebtoonList.js",
         "sites/others/webtoon/hideWebtoons.js",
         "sites/others/webtoon/currentlyReadingList.js",
-        "sites/others/webtoon/highlightCurrentWebtoon.js",
+        "sites/others/webtoon/describeCurrentWebtoon.js",
         "sites/others/webtoon/highlightWebtoon.js",
         "sites/others/webtoon/webtoon.js"
       ]
